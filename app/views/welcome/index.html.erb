@@ -148,7 +148,7 @@
                                         <table class="table  mb-0">
                                           <thead class="table-light">
                                             <tr>
-                                              <th>Ação</th> <th>Prioridade</th> <th>Responsável</th> <th>Progresso</th>
+                                              <th>Ação</th> <th>Situação</th> <th>Responsável</th> <th>Progresso</th>
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -165,7 +165,7 @@
                                               </td>
                                               <td class="align-middle">
                                                 <span class="badge bg-success">
-                                                <%= tarefa.priority.name %>
+                                                <%= tarefa.situation.name %>
                                                 </span></td>
                                               <td class="align-middle"><div class="avatar-group">
                                                 <b><p> <%= tarefa.assigned_to.is_a?(User) ? tarefa.assigned_to.name : 'Não designado' %></p></b>
